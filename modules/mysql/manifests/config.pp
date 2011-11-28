@@ -4,8 +4,8 @@ class mysql::config {
 		source => "puppet:///modules/mysql/my.cnf",
 		owner => "mysql",
 		group => "mysql",
-		require => Class["mysql::install],
-		notify => Class["mysql::service],
+		require => Class["mysql::install"],
+		notify => Class["mysql::service"],
 	}
 
 	file { "/etc/mysql/var":

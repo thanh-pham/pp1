@@ -3,7 +3,7 @@ class mysql::service {
 		ensure => running,
 		hasstatus => true,
 		hasrestart => true,
-		enabled => true,
+		enable  => true,
 		require => Class["mysql::config"],	
 	}
 }
