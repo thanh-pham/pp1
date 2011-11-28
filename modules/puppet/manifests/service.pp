@@ -1,9 +1,9 @@
-class apache::service {
-	service { "apache2" :
+class puppet::service {
+	service { "puppet" :
 		ensure => running,
 		hasstatus => true,
 		hasrestart => true,
 		enable => true,
-		require => Class["apache::install"],
+		require => Class["puppet::install"]
 	}
 }
