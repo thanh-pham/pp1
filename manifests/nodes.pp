@@ -1,3 +1,3 @@
 node 'pham.home' {
-	include sudo,ssh
+	include sudo,ssh,postfix
 }
